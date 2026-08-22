@@ -1,0 +1,44 @@
+generated: '2026-08-22'
+method: probed
+source: live probes of https://greatergoodhealth.com/.well-known/*
+note: >-
+  No .well-known surface is served. greatergoodhealth.com is a WordPress site behind an
+  edge that answers HTTP 403 (552-byte HTML error body) for every /.well-known/* path, and
+  answers HTTP 200 with an identical 64,289-byte "Content Not Found" HTML page for every
+  other unknown path. Nothing was fetched and nothing was saved, so NO WellKnown or
+  SecurityTxt pointer is emitted — this file records a measured absence, not a presence.
+hit_count: 0
+soft_404_control:
+  path: /zzz-no-such-page-98765/
+  status: 200
+  final_url: https://greatergoodhealth.com/content-not-found/
+  bytes: 64289
+  title: Content Not Found | Greater Good Health
+  note: >-
+    Control probe proving the host is a catch-all: any unknown path returns this same
+    body. A 200 on this host is not evidence a document exists.
+hosts:
+- host: https://greatergoodhealth.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 403
+  - path: /.well-known/openid-configuration
+    status: 403
+  - path: /.well-known/oauth-authorization-server
+    status: 403
+  - path: /.well-known/api-catalog
+    status: 403
+  - path: /.well-known/ai-plugin.json
+    status: 403
+  - path: /.well-known/agent-card.json
+    status: 403
+  - path: /.well-known/agent.json
+    status: 403
+- host: https://www.greatergoodhealth.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 403
+  - path: /.well-known/agent-card.json
+    status: 403
+  - path: /.well-known/agent.json
+    status: 403

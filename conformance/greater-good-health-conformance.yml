@@ -1,0 +1,46 @@
+generated: '2026-08-22'
+method: searched
+source: https://greatergoodhealth.com/ (site-wide footer badge)
+note: >-
+  Greater Good Health publishes no API contract, so there is no spec to assert technical
+  conformance against. The one published compliance claim on its own surface is the HIPAA
+  Seal of Compliance badge carried in the site-wide footer. Healthcare domain standards
+  (HL7v2, FHIR, X12) were checked for and are NOT claimed or published anywhere on the
+  public site.
+conformance:
+- id: hipaa
+  conforms: true
+  scope: organization
+  evidence:
+    type: attestation-badge
+    label: HIPAA Seal of Compliance
+    verifier: Compliancy Group
+    verification_url: https://compliancy-group.com/hipaa-compliance-verification/
+    badge_image: https://greatergoodhealth.com/wp-content/uploads/2023/08/HIPAA-Seal-of-Compliance-Hi-res-400x212.png.webp
+    found_on: https://greatergoodhealth.com/
+    note: >-
+      Third-party attestation badge, not a government certification and not an API-level
+      control. Recorded because the provider publishes it on every page of its own site.
+- id: fhir
+  conforms: false
+  evidence:
+    note: >-
+      No FHIR endpoint, capability statement, or claim found on greatergoodhealth.com.
+      Greater Good Health is a care delivery organization operating on partner and vendor
+      systems; it publishes no patient-access or clinical data API of its own.
+- id: hl7v2
+  conforms: false
+  evidence:
+    note: No HL7v2 message-type or interface claim published on the public site.
+false_positives_rejected:
+- id: gdpr
+  reason: >-
+    An automated keyword probe matched "GDPR" on this site, but every occurrence is the
+    name of the WordPress plugin "Complianz | GDPR/CCPA Cookie Consent" in markup and
+    asset paths. It is a cookie banner, not a published compliance program. Rejected.
+- id: trust-center
+  reason: >-
+    An automated probe recorded a trust center at /content-not-found/. That is the site's
+    soft-404 catch-all (identical 64,289-byte body for every unknown path); trust.,
+    security. and compliance. subdomains do not resolve. No trust center exists. Rejected
+    and the TrustCenter pointer was removed.

@@ -64,5 +64,16 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Greater Good Health is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://www.nasdaqprivatemarket.com/
+Greater Good Health is a Manhattan Beach, California value-based senior healthcare organization
+founded in 2021 that delivers preventive, whole-person primary care to older adults through a
+nurse-practitioner-led model. It operates its own senior primary care clinics and an integrated
+clinical services platform — risk adjustment and annual wellness visits, transitions of care,
+high-risk and chronic condition management, and behavioral health — on behalf of health plans,
+medical groups, ACOs and other risk-bearing organizations.
+
+**No public API surface.** Greater Good Health is a care delivery organization, not a software
+vendor. It publishes no developer program, API reference, SDK, or machine-readable API contract.
+Contract discovery was run against every host and missed on all paths; see `x-coverage` in
+`apis.yml` for the probed URLs and their HTTP statuses.
+
+- https://greatergoodhealth.com/

@@ -1,7 +1,18 @@
 aid: greater-good-health
 name: Greater Good Health
-description: 'Greater Good Health is a company surfaced via the API Evangelist harvest backlog (source:
-  secondary-market) and added to the network as a stub for full-pipeline profiling.'
+description: >-
+  Greater Good Health is a Manhattan Beach, California value-based senior healthcare
+  organization founded in 2021 that delivers preventive, whole-person primary care to
+  older adults through a nurse-practitioner-led model. It operates its own senior primary
+  care clinics and an integrated clinical services platform — risk adjustment and annual
+  wellness visits, transitions of care, high-risk and chronic condition management, and
+  behavioral health — delivered on behalf of health plans, medical groups, ACOs and other
+  risk-bearing organizations. Alongside care delivery it runs a nurse practitioner
+  community, the Greater Good Institute education portal, and clinical technology and
+  analytics tooling for its employed NPs. It is a care delivery organization rather than a
+  software vendor: it publishes no public developer program, API, SDK or machine-readable
+  API contract of any kind.
+image: https://greatergoodhealth.com/wp-content/uploads/2023/06/cropped-ggh-logo-270x270.png
 url: https://raw.githubusercontent.com/api-evangelist/greater-good-health/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
@@ -12,6 +23,15 @@ created: '2026-08-22'
 modified: '2026-08-22'
 tags:
 - Company
+- Healthcare
+- Primary Care
+- Senior Care
+- Value-Based Care
+- Medicare
+- Nurse Practitioners
+- Clinics
+- Population Health
+- Health Services
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +39,57 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/greater-good-health-domain-security.yml
+- type: Conformance
+  url: conformance/greater-good-health-conformance.yml
+- type: Compliance
+  url: conformance/greater-good-health-conformance.yml
 - type: Website
-  url: https://www.nasdaqprivatemarket.com/
+  url: https://greatergoodhealth.com/
+- type: About
+  url: https://greatergoodhealth.com/about-us/
+- type: Blog
+  url: https://greatergoodhealth.com/about-us/news/
+- type: Support
+  url: https://greatergoodhealth.com/patients/get-care/
+- type: FAQ
+  url: https://greatergoodhealth.com/patients/resources/faqs/
+- type: TermsOfService
+  url: https://greatergoodhealth.com/terms-and-conditions/
+- type: PrivacyPolicy
+  url: https://greatergoodhealth.com/privacy-policy/
+- type: Careers
+  url: https://greatergoodhealth.com/talent/join-our-team/job-openings/
+- type: LinkedIn
+  url: https://www.linkedin.com/company/greater-good-health/
+- type: YouTube
+  url: https://www.youtube.com/@Greater-Good-Health
+- type: Facebook
+  url: https://www.facebook.com/GreaterGoodHealth/
+- type: Instagram
+  url: https://www.instagram.com/greatergoodhealth/
+
+x-enrichment:
+  date: '2026-08-22'
+  status: minimal
+  artifacts_added: 3
+  pass: local-v1
+x-coverage:
+  state: none
+  reason: not-a-software-company
+  detail: >-
+    Greater Good Health is a nurse-practitioner-led senior primary care clinic operator, not
+    a software vendor - its WordPress marketing site has no /developers, /api or docs
+    section at all, and every contract-discovery probe (openapi.json, swagger.json,
+    api-docs, llms.txt) resolves to the same 64,289-byte "Content Not Found" catch-all page.
+  evidence:
+  - url: https://greatergoodhealth.com/openapi.json
+    status: 200
+  - url: https://greatergoodhealth.com/developers
+    status: 200
+  - url: https://greatergoodhealth.com/.well-known/agent-card.json
+    status: 403
+  - url: https://api.github.com/orgs/greatergoodhealth
+    status: 404
+  checked: '2026-08-22'
