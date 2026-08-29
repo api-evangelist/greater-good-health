@@ -12,6 +12,17 @@ description: >-
   analytics tooling for its employed NPs. It is a care delivery organization rather than a
   software vendor: it publishes no public developer program, API, SDK or machine-readable
   API contract of any kind.
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 image: https://greatergoodhealth.com/wp-content/uploads/2023/06/cropped-ggh-logo-270x270.png
 url: https://raw.githubusercontent.com/api-evangelist/greater-good-health/refs/heads/main/apis.yml
 x-type: company
