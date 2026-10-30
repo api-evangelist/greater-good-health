@@ -64,16 +64,83 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Greater Good Health is a Manhattan Beach, California value-based senior healthcare organization
-founded in 2021 that delivers preventive, whole-person primary care to older adults through a
-nurse-practitioner-led model. It operates its own senior primary care clinics and an integrated
-clinical services platform — risk adjustment and annual wellness visits, transitions of care,
-high-risk and chronic condition management, and behavioral health — on behalf of health plans,
-medical groups, ACOs and other risk-bearing organizations.
+Greater Good Health is a Manhattan Beach, California value-based senior healthcare organization founded in 2021 that delivers preventive, whole-person primary care to older adults through a nurse-practitioner-led model. It operates its own senior primary care clinics and an integrated clinical services platform — risk adjustment and annual wellness visits, transitions of care, high-risk and chronic condition management, and behavioral health — delivered on behalf of health plans, medical groups, ACOs and other risk-bearing organizations. Alongside care delivery it runs a nurse practitioner community, the Greater Good Institute education portal, and clinical technology and analytics tooling for its employed NPs. It is a care delivery organization rather than a software vendor: it publishes no public developer program, API, SDK or machine-readable API contract of any kind.
 
-**No public API surface.** Greater Good Health is a care delivery organization, not a software
-vendor. It publishes no developer program, API reference, SDK, or machine-readable API contract.
-Contract discovery was run against every host and missed on all paths; see `x-coverage` in
-`apis.yml` for the probed URLs and their HTTP statuses.
+**Areas:** Company · Healthcare · Primary Care · Senior Care · Value-Based Care · Medicare · Nurse Practitioners · Clinics · Population Health · Health Services
 
-- https://greatergoodhealth.com/
+## Greater Good Health on APIs.io
+
+Everything profiled for Greater Good Health is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/greater-good-health/](https://apis.io/providers/greater-good-health/)** — or go straight to one of the APIs or properties below.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Greater Good Health Domain Security](https://apis.io/security/greater-good-health/greater-good-health-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://greatergoodhealth.com/)
+- [Support](https://greatergoodhealth.com/patients/get-care/)
+- [Blog](https://greatergoodhealth.com/about-us/news/)
+- [Terms of service](https://greatergoodhealth.com/terms-and-conditions/)
+- [Privacy policy](https://greatergoodhealth.com/privacy-policy/)
+
+## API Evangelist rating
+
+**Kin Score 16.0** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 48.2 |
+| Contract quality | 0.0 |
+| Contract governance | 18.2 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 7.1 |
+| Access clarity | 28.9 |
+
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 24.2** — Health
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/greater-good-health/](https://apis.io/providers/greater-good-health/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Greater Good Health: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/greater-good-health/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
